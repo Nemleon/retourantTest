@@ -1,0 +1,62 @@
+2019-11-07 13:42:00 (CET)
+PDOException: SQLSTATE[HY000] [2002] Ïîäêëþ÷åíèå íå óñòàíîâëåíî, ò.ê. êîíå÷íûé êîìïüþòåð îòâåðã çàïðîñ íà ïîäêëþ÷åíèå.
+ in C:\xampp\htdocs\restourant.com\applications\lib\db.php:24
+Stack trace:
+#0 C:\xampp\htdocs\restourant.com\applications\lib\db.php(24): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 C:\xampp\htdocs\restourant.com\applications\lib\db.php(44): Db_connect->db_connect()
+#2 C:\xampp\htdocs\restourant.com\applications\models\model_menu.php(22): Get_data_db->select_data('SELECT * FROM d...')
+#3 C:\xampp\htdocs\restourant.com\applications\controllers\controller_menu.php(26): Model_Menu->get_data()
+#4 C:\xampp\htdocs\restourant.com\applications\core\route.php(59): Controller_Menu->action_index()
+#5 C:\xampp\htdocs\restourant.com\applications\bootstrap.php(20): Route::start()
+#6 C:\xampp\htdocs\restourant.com\index.php(4): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+2019-11-07 13:43:12 (CET)
+PDOException: SQLSTATE[HY000] [2002] Ïîäêëþ÷åíèå íå óñòàíîâëåíî, ò.ê. êîíå÷íûé êîìïüþòåð îòâåðã çàïðîñ íà ïîäêëþ÷åíèå.
+ in C:\xampp\htdocs\restourant.com\applications\lib\db.php:24
+Stack trace:
+#0 C:\xampp\htdocs\restourant.com\applications\lib\db.php(24): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 C:\xampp\htdocs\restourant.com\applications\lib\db.php(44): Db_connect->db_connect()
+#2 C:\xampp\htdocs\restourant.com\applications\models\model_menu.php(22): Get_data_db->select_data('SELECT * FROM d...')
+#3 C:\xampp\htdocs\restourant.com\applications\controllers\controller_menu.php(26): Model_Menu->get_data()
+#4 C:\xampp\htdocs\restourant.com\applications\core\route.php(59): Controller_Menu->action_index()
+#5 C:\xampp\htdocs\restourant.com\applications\bootstrap.php(20): Route::start()
+#6 C:\xampp\htdocs\restourant.com\index.php(4): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+2019-11-07 13:45:02 (CET)
+Exception: Ð¡Ð¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ Ð½Ðµ Ð±Ñ‹Ð»Ð¾ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¾: Ð¿Ñ€Ð¾Ð±Ð»ÐµÐ¼Ñ‹ Ñ ÑÐµÑ€Ð²Ð¸ÑÐ¾Ð¼. ÐŸÐ¾Ð¿Ñ€Ð¾Ð±ÑƒÐ¹Ñ‚Ðµ Ð¿Ð¾Ð·Ð¶Ðµ, Ñ€ÐµÑˆÐµÐ½Ð¸Ðµ Ð¿Ñ€Ð¾Ð±Ð»ÐµÐ¼Ñ‹ Ð² Ð¿Ñ€Ð¾Ñ†ÐµÑÑÐµ! in C:\xampp\htdocs\restourant.com\applications\core\phpmailer\send_mail.php:69
+Stack trace:
+#0 C:\xampp\htdocs\restourant.com\applications\models\model_feedback.php(20): send_mail('qweqwe', 'qwe@gmail.com', 'qweqweqwe')
+#1 C:\xampp\htdocs\restourant.com\applications\controllers\controller_feedback.php(14): Model_Feedback->get_data()
+#2 C:\xampp\htdocs\restourant.com\applications\core\route.php(59): Controller_Feedback->action_index()
+#3 C:\xampp\htdocs\restourant.com\applications\bootstrap.php(20): Route::start()
+#4 C:\xampp\htdocs\restourant.com\index.php(4): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+2019-11-07 13:48:21 (CET)
+Exception: Ð¡Ð¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ Ð½Ðµ Ð±Ñ‹Ð»Ð¾ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¾: Ð¿Ñ€Ð¾Ð±Ð»ÐµÐ¼Ñ‹ Ñ ÑÐµÑ€Ð²Ð¸ÑÐ¾Ð¼. ÐŸÐ¾Ð¿Ñ€Ð¾Ð±ÑƒÐ¹Ñ‚Ðµ Ð¿Ð¾Ð·Ð¶Ðµ, Ñ€ÐµÑˆÐµÐ½Ð¸Ðµ Ð¿Ñ€Ð¾Ð±Ð»ÐµÐ¼Ñ‹ Ð² Ð¿Ñ€Ð¾Ñ†ÐµÑÑÐµ! in C:\xampp\htdocs\restourant.com\applications\core\phpmailer\send_mail.php:69
+Stack trace:
+#0 C:\xampp\htdocs\restourant.com\applications\models\model_feedback.php(20): send_mail('qweqwe', 'qwe@gmail.com', 'qweqwe')
+#1 C:\xampp\htdocs\restourant.com\applications\controllers\controller_feedback.php(14): Model_Feedback->get_data()
+#2 C:\xampp\htdocs\restourant.com\applications\core\route.php(59): Controller_Feedback->action_index()
+#3 C:\xampp\htdocs\restourant.com\applications\bootstrap.php(20): Route::start()
+#4 C:\xampp\htdocs\restourant.com\index.php(4): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+2019-11-07 13:48:38 (CET)
+Exception: Ð¡Ð¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ Ð½Ðµ Ð±Ñ‹Ð»Ð¾ Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¾: Ð¿Ñ€Ð¾Ð±Ð»ÐµÐ¼Ñ‹ Ñ ÑÐµÑ€Ð²Ð¸ÑÐ¾Ð¼. ÐŸÐ¾Ð¿Ñ€Ð¾Ð±ÑƒÐ¹Ñ‚Ðµ Ð¿Ð¾Ð·Ð¶Ðµ, Ñ€ÐµÑˆÐµÐ½Ð¸Ðµ Ð¿Ñ€Ð¾Ð±Ð»ÐµÐ¼Ñ‹ Ð² Ð¿Ñ€Ð¾Ñ†ÐµÑÑÐµ! in C:\xampp\htdocs\restourant.com\applications\core\phpmailer\send_mail.php:69
+Stack trace:
+#0 C:\xampp\htdocs\restourant.com\applications\models\model_feedback.php(20): send_mail('qweqwe', 'qwe@gmail.com', 'qweqwe')
+#1 C:\xampp\htdocs\restourant.com\applications\controllers\controller_feedback.php(14): Model_Feedback->get_data()
+#2 C:\xampp\htdocs\restourant.com\applications\core\route.php(59): Controller_Feedback->action_index()
+#3 C:\xampp\htdocs\restourant.com\applications\bootstrap.php(20): Route::start()
+#4 C:\xampp\htdocs\restourant.com\index.php(4): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+2019-11-07 13:50:39 (CET)
+Exception: qweqweqwe in C:\xampp\htdocs\restourant.com\applications\core\phpmailer\send_mail.php:69
+Stack trace:
+#0 C:\xampp\htdocs\restourant.com\applications\models\model_feedback.php(20): send_mail('qweqwe', 'qwe@gmail.com', 'qweqweqwe')
+#1 C:\xampp\htdocs\restourant.com\applications\controllers\controller_feedback.php(14): Model_Feedback->get_data()
+#2 C:\xampp\htdocs\restourant.com\applications\core\route.php(59): Controller_Feedback->action_index()
+#3 C:\xampp\htdocs\restourant.com\applications\bootstrap.php(20): Route::start()
+#4 C:\xampp\htdocs\restourant.com\index.php(4): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+2019-11-07 13:51:40 (CET)
+SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting

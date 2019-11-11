@@ -1,0 +1,382 @@
+/* Общие стили для сайта */
+* {
+	box-sizing: border-box;
+	font-family: candara;
+}
+body {margin: 0;}
+.wrapper {
+	margin: auto;
+	display: flex;
+	align-self: center;
+	width: 90%;
+	text-align: center;
+}
+.main {
+	margin: auto;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+}
+	
+	/* Стили текста */
+	
+	.articles {
+		flex-direction: column;
+		align-items: center;
+		display:flex;
+		background:#1e1f26;
+		width: 90%;
+		margin: auto;
+		box-shadow: 0 0 10px black;	
+	}
+	p {
+		font-size: 16px;
+	}
+	h2 {
+		color: white;
+	}
+	textarea {
+		border-radius: 10px;
+		height: 250px;
+		margin: 2px;
+		font-size: 16px;
+		padding: 5px;
+		width: 55%;
+		resize: none;
+	}
+	.textInput {
+		height: 6%;
+		margin: 2px;
+		font-size: 16px;
+		padding: 5px;
+		width: 55%;
+	}
+	.spaceContent {
+		margin: auto;
+		padding: 1%;
+		width: 90%;
+		background: #f6f6f6;
+		box-shadow: 0 0 10px black;
+	}
+	.spaceText {
+		margin: auto;
+		width: 90%;
+	}
+	.spaceOrder {
+		color: green;
+		margin: auto;
+		text-align: left;
+		width: 50%;
+	}
+	
+	/* ----------------- */
+	
+	/* Пустой блок для занимания свободного пространства */
+
+	.space {
+		flex-basis: 400px;
+		flex-grow: 10;
+		flex-shrink: 10;
+	}
+
+	/* ---------------------------------------- */
+
+.formErrors {
+	width: 90%;
+	margin: 1% 15% 1%;
+	text-align: left;
+	color: red;
+	text-shadow: 1px 1px 10px rgba(255, 0, 0, 5);
+	font-weight: bold;
+}
+.valid {
+	box-shadow: 0 0 20px #1e9912;
+}
+.invalid {
+	box-shadow: 0 0 10px red;
+}
+
+	/* Стили кнопок */
+	.buttonSend, .buttonDelete {
+		text-align: center;
+		cursor: pointer;
+		margin: 2px 0 2px;
+		font-weight: 700;
+		color: white;
+		width: 300px;
+		padding: .8em 1em calc(.8em + 3px);
+		transition: 0.2s;	
+	} 
+	.buttonSend {
+		background: rgb(64,199,129);
+		box-shadow: 0 -5px rgb(26, 99, 60) inset;
+	}
+	.buttonSend:hover { background: rgb(53, 167, 110);}
+	.buttonSend:active {
+		background: rgb(33,147,90);
+		box-shadow: 0 3px rgb(33,147,90) inset;
+	}
+	.buttonSend:disabled {
+		cursor: default;
+		background: rgb(53,167,110);
+		box-shadow: 0 3px rgb(53,167,110) inset;
+	}
+	.buttonDelete {
+		background: #ff550d;
+		box-shadow: 0 -3px rgb(138, 28, 28) inset;
+	} 
+	.buttonDelete:hover { background: rgb(138, 28, 28);}
+	.buttonDelete:active {
+		background: rgb(77, 16, 16);
+		box-shadow: 0 3px rgb(77, 16, 16) inset;
+	}
+	.positioningBut {
+		width: 55%;
+		margin: auto;
+		display: flex;
+	}
+
+	/* ------------------------ */
+	
+/* --------------------- */
+
+/* Стили для шапки */
+
+.header {
+	display: flex;
+	box-shadow: 0 4px 7px -5px black;
+	background: #1e1f26;
+}
+.headerSpace {
+	display: flex;
+	width: 95%;
+	justify-content: space-between;
+	margin: auto;
+}
+.logo {
+	display:flex;
+}
+.hat {
+	display:flex;
+}
+.navigation {
+	display: none;
+}
+
+	/* Ссылки кнопки */
+
+	.link, .linkFeed {
+		flex-direction: column;
+		text-decoration: none;
+		display: flex;
+		width: 200px;
+		cursor: pointer;
+		color: white;
+		padding: .8em 1em calc(.8em + 3px);
+		transition: 0.2s;
+		text-align: center;
+	}
+	.link {
+		background: #1e1f26;
+		box-shadow: 0 -3px #14100e inset;
+	}
+	.link:hover { background: #14100e;}
+	.linkFeed {
+		background: #ff550d;
+		box-shadow: 0 -3px rgb(138, 28, 28) inset;
+	}
+	.linkFeed:hover { background: rgb(138, 28, 28);}
+	.linkLogo {
+		margin-top: 4%;
+		text-decoration: none;
+		display: flex;
+		width: 230px;
+		padding: .8em 1em calc(.8em + 3px);
+		cursor: pointer;
+		transition: 0.2s;
+	}
+	
+	/* ------------------- */
+
+/* ----------------------- */
+
+/* Стили для меню */
+
+.spaceMenu	 {
+	margin: auto;
+	display: flex;
+	width: 90%;
+	background: #f6f6f6;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	box-shadow: 0 0 10px black;
+}
+.menu {
+	display: flex;
+	height: 450px;
+	position: relative;
+	margin: 2%;
+	min-width: 300px;
+	width: 300px;
+	background: white;
+}
+.menu:hover {
+	box-shadow: 0 0 15px black;
+}
+.menu:active {
+	background: #93e5aa;
+	box-shadow: 0 0 10px green;
+}
+.label {
+	display: flex;
+	background: none;
+	min-width: 100%;
+	height: 450px;
+	z-index: 10;
+	cursor: pointer;
+}
+.checkbox {
+	display: none;
+	position: absolute;
+	top: 1%;
+	left: 1%;
+	z-index: 20;
+}
+.nameFood, .cost, .mass {
+	display: flex;
+	position: absolute;
+	left: 5%
+}
+.nameFood {
+	top: 69%;
+}
+.cost {
+	top: 78%; 
+}
+.mass {
+	top: 85%;
+}
+.image {
+	display: flex;
+	position: absolute;
+	z-index: 5;
+}
+.deliverySpace {
+	padding: 0 10% 0;
+	display: flex;
+	margin: auto;
+	width: 55%;
+	justify-content: space-evenly;
+	color: #399e56;
+}
+
+/* ------------------- */
+
+/* Стили для футера */
+
+.footer {
+	text-align: center;
+	margin-top: 2%;
+	display: block;
+	padding: 2px;
+	box-shadow: 0 -4px 7px -5px black;
+}
+.footSpace {
+	display: flex;
+	margin: auto;
+	align-items: center;
+	flex-direction: column;
+	width: 90%;
+	
+}
+.footImg, .footEnd {
+	margin: 2%;
+}
+.footList {
+	width: 70%;
+}
+.foot {
+	text-decoration: none;
+	margin: 0 2% 0;
+}
+.map {
+	display: flex;
+	margin: auto;
+	width: 60%;
+	height: 500px;
+}
+
+/* ----------------- */
+
+@media (max-width: 1100px) {
+	
+	.headerSpace {
+		flex-wrap: wrap;
+		justify-content: center;
+		display: flex;
+		width: 99%;
+		margin: auto;
+		
+	}
+	
+	.navigation {
+		background: black;
+		cursor: pointer;
+		text-align: center;
+		display: block;
+		color: white;
+		width: 100%;
+	}
+	
+	.logo {
+		display: flex;
+	}
+	.hat {
+		display:none;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.link, .linkFeed {
+		flex-direction: column;
+		text-decoration: none;
+		display: flex;
+		width: 100%;
+		cursor: pointer;
+		color: white;
+		padding: .8em 1em calc(.8em + 3px);
+		transition: 0.2s;
+		text-align: center;
+	}
+	.link {
+		background: #1e1f26;
+		box-shadow: 0 -3px #14100e inset;
+	}
+	.link:hover { background: #14100e;}
+	.linkFeed {
+		background: #ff550d;
+		box-shadow: 0 -3px rgb(138, 28, 28) inset;
+	}
+	.linkFeed:hover { background: rgb(138, 28, 28);}
+	.linkLogo {
+		margin-top: 4%;
+		text-decoration: none;
+		display: flex;
+		width: 230px;
+		padding: .8em 1em calc(.8em + 3px);
+		cursor: pointer;
+		transition: 0.2s;
+	}
+	
+	.map {
+	display: flex;
+	margin: auto;
+	width: 95%;
+	height: 300px;
+}
+
+}
+
